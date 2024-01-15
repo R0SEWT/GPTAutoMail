@@ -25,12 +25,11 @@ def send_email(smtp_usuario, smtp_contrasena, email):
     server.quit()
 
 
-def get_and_send_email(destinatario, asunto, cuerpo):
+def get_and_send_email(destinatario, asunto, cuerpo, smtp_contrasena):
     remitente = "rody.vilchez00@gmail.com"
     email = get_email(remitente, destinatario, asunto, cuerpo)
     # establecer conexión con el servidor SMTP y enviar el mensaje
     smtp_usuario = remitente
-    smtp_contrasena = 'uhdp wwkk rhne vuep'
     send_email(smtp_usuario, smtp_contrasena, email)
 
 '''# config 
