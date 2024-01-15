@@ -31,20 +31,3 @@ def get_and_send_email(destinatario, asunto, cuerpo, smtp_contrasena):
     # establecer conexión con el servidor SMTP y enviar el mensaje
     smtp_usuario = remitente
     send_email(smtp_usuario, smtp_contrasena, email)
-
-'''# config 
-remitente = "rody.vilhcez00@gmail.com"
-destinatario = "dabat74405@regapts.com"
-asunto = "HI"
-cuerpo = "Hola mundo"
-
-# inicializar el mensaje
-email = get_email(remitente, destinatario, asunto, cuerpo)
-
-# establecer conexión con el servidor SMTP y enviar el mensaje
-smtp_usuario = "rody.vilchez00@gmail.com"
-smtp_contrasena = 'uhdp wwkk rhne vuep'
-'''
-#send_email(smtp_usuario, smtp_contrasena, email)
-
-#get_and_send_email('dabat74405@regapts.com', 'hi', 'hola')

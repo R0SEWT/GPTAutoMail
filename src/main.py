@@ -4,7 +4,7 @@ import c_empleado
 import api_gpt
 from decouple import config
 
-# cargar BD y prompt personalizado
+# cargar BD y prompts
 path = './src/empleados.xlsx'
 
 empleados = []
@@ -14,6 +14,7 @@ for index, row in pd.read_excel(path).iterrows():
 
 # para cada uno obtener respuesta del chatgpt y mandar por correo
 API_OPEN_AI_KEY = config('API_OPEN_AI_KEY')
+EMAIL_ACCOUNT = config('EMAIL_ACCOUNT')
 APP_PASS_GMAIL = config('APP_PASS_GMAIL')
 
 for e in empleados:
