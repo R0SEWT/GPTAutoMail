@@ -2,6 +2,13 @@ from email.message import EmailMessage          # forma del mensaje
 import smtplib                                  # se encarga de la conexion con gmail 
 
 
+def get_and_send_email(destinatario, asunto, cuerpo, remitente, smtp_contrasena):
+    email = get_email(remitente, destinatario, asunto, cuerpo)
+    # establecer conexión con el servidor SMTP y enviar el mensaje
+    smtp_usuario = remitente
+    send_email(smtp_usuario, smtp_contrasena, email)
+
+
 def get_email(remitente, destinatario, asunto, cuerpo):
     email = EmailMessage()
     email["From"] = remitente
@@ -23,11 +30,3 @@ def send_email(smtp_usuario, smtp_contrasena, email):
     server.send_message(email)
     # cerrar la conexión
     server.quit()
-
-
-def get_and_send_email(destinatario, asunto, cuerpo, smtp_contrasena):
-    remitente = "rody.vilchez00@gmail.com"
-    email = get_email(remitente, destinatario, asunto, cuerpo)
-    # establecer conexión con el servidor SMTP y enviar el mensaje
-    smtp_usuario = remitente
-    send_email(smtp_usuario, smtp_contrasena, email)
