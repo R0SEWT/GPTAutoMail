@@ -7,8 +7,11 @@ from decouple import config
 
 def get_empleados_with_prompts(path):
     empleados = []
-    for i_, row in pd.read_excel(path).iterrows():
-        empleado = c_empleado.Empleado(row['Nombre'], row['Apellidos'], row['Correo'], row['Cargo'], row['Edad'])
+    for _ ,row in pd.read_excel(path).iterrows():
+        empleado = c_empleado.Empleado( row['Nombre'], row['Apellidos']
+                                       , row['Correo'], row['Cargo'], row['Edad'],
+                                        row['Cantidad de accidentes'], 
+                                        row['Años de experiencia'])
         empleados.append(empleado)
     return empleados
 
@@ -28,7 +31,7 @@ def gpt_request_and_send(empleados, API_OPEN_AI_KEY, EMAIL_ACCOUNT, APP_PASS_GMA
         # inicializar el mensaje y enviarlo 
         enviar_mails.get_and_send_email(e.mail, asunto, cuerpo, EMAIL_ACCOUNT, APP_PASS_GMAIL)
         print(f"Correo enviado a {e.name} en {e.mail}")
-
+        break # para probar
 
 #####################################################################################################
         
@@ -41,7 +44,6 @@ def main():
     API_OPEN_AI_KEY, EMAIL_ACCOUNT, APP_PASS_GMAIL = read_env()
     gpt_request_and_send(empleados, API_OPEN_AI_KEY, EMAIL_ACCOUNT, APP_PASS_GMAIL)# Logs
 
-    
 
 if __name__ == "__main__":
     main()
