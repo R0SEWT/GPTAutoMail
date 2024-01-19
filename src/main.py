@@ -33,8 +33,7 @@ def gpt_request_and_send(empleados, API_OPEN_AI_KEY, EMAIL_ACCOUNT, APP_PASS_GMA
         enviar_mails.get_and_send_email(e.mail, asunto, cuerpo, EMAIL_ACCOUNT, APP_PASS_GMAIL)
         print(f"Correo enviado a {e.name} en {e.mail}. {costo} tokens gastados.")
         total += costo
-    return costo
-
+    return costo     
 #####################################################################################################
         
 def main():
@@ -47,6 +46,7 @@ def main():
     API_OPEN_AI_KEY, EMAIL_ACCOUNT, APP_PASS_GMAIL = read_env()
     c_tokens = gpt_request_and_send(empleados, API_OPEN_AI_KEY, EMAIL_ACCOUNT, APP_PASS_GMAIL)# Logs
     print(f'Se han gastado {precio_token*c_tokens} dolares')
+
 
 if __name__ == "__main__":
     main()
