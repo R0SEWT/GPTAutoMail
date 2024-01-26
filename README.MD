@@ -1,6 +1,14 @@
-# Proyecto: Envio de correos con respuestas generadas por GPT
+# Automatización de Correos para Fomentar el Uso de Equipos de Protección Personal (EPP) con Chat-GPT
 
-Este proyecto utiliza el lenguaje de programación Python y varias bibliotecas para cargar datos personales desde un archivo Excel, generar respuestas mediante OpenAI's GPT, y enviar correos electrónicos personalizados a un grupo de empleados de una empresa electrica fomentando el uso de EPP.
+Este proyecto utiliza Python y diversas bibliotecas para automatizar el proceso de envío de correos electrónicos personalizados a empleados, con el fin de fomentar el uso de Equipos de Protección Personal (EPP) en una empresa de suministro electrico. Se basa en la personalización de mensajes de correo electrónico en función de la `edad`, el `cargo` y los `años de experiencia` de cada empleado.
+
+El proyecto se centra en la eficiencia y la personalización, lo que permite crear mensajes de correo electrónico que sean relevantes y útiles para cada individuo. Este enfoque se alinea con las mejores prácticas recomendadas por Thorium Labs para la implementación de campañas de correo electrónico impulsadas por IA.
+
+Se han utilizado varias bibliotecas de Python para facilitar la automatización del proceso. Entre ellas se incluyen pandas para la manipulación de datos, openai para la interacción con la API de GPT, smtplib para el envío de correos electrónicos y python-decouple para manejar variables de configuración.
+
+La información de los empleados se carga desde un archivo Excel, lo que permite una gestión sencilla y eficiente de los datos. Una vez cargados los datos, se utilizan para generar correos electrónicos personalizados utilizando la API de OpenAI GPT.
+
+Este proyecto no sólo demuestra la capacidad de automatizar tareas repetitivas, sino también la aplicabilidad de la inteligencia artificial en el ámbito de la comunicación corporativa.
 
 ## Requisitos
 
@@ -42,4 +50,5 @@ Además, necesitarás una clave API de OpenAI, así como información de configu
 
 El programa leerá la información de los empleados desde `empleados.xlsx`, generará respuestas utilizando la API de GPT y enviará correos electrónicos personalizados a cada empleado.
 
-**Nota:** Asegúrate de tener una conexión a Internet para realizar solicitudes a la API de GPT. Además, ten cuidado con la frecuencia de uso de la API para evitar exceder los límites de tu cuenta, aqui no vigilamos los tokens ni le tenemos miedo a la muerte.
+**Nota:** Asegúrate de tener una conexión a Internet para realizar solicitudes a la API de GPT. Además, ten cuidado con la frecuencia de uso de la API para evitar exceder los límites de tu cuenta.
+ **De momento  no vigilamos los tokens ni le tenemos miedo a la muerte.**
