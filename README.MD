@@ -21,11 +21,6 @@ Este proyecto te ayuda a enviar correos electrónicos personalizados a tus emple
 1. Carga la información de los empleados desde un archivo Excel.
 2. El programa genera correos electrónicos personalizados y los envía.
 
-## Recursos adicionales
+## Fundamento
+El proyecto se centra en la eficiencia y la personalización, lo que permite crear mensajes de correo electrónico que sean relevantes y útiles para cada individuo. Este enfoque se alinea con las mejores prácticas recomendadas por Thorium Labs para la implementación de campañas de correo electrónico impulsadas por IA.
 
-- Para más información sobre Markdown, consulta esta [hoja de trucos](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-- Si tienes alguna pregunta, no dudes en preguntar. Estamos aquí para ayudarte.
-
----
-
-©  2024 NombreDeTuOrganización, Inc.
