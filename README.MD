@@ -1,4 +1,4 @@
-# Automatización de Correos EPP
+# Automatización de Correos para Fomentar el Uso de Equipos de Protección Personal (EPP) con Chat-GPT API
 
 ## Introducción
 
@@ -7,7 +7,7 @@ Este proyecto te ayuda a enviar correos electrónicos personalizados a tus emple
 ## ¿Qué hace este proyecto?
 
 - Envía correos electrónicos personalizados a empleados.
-- Personaliza los mensajes según la edad, cargo y años de experiencia del empleado.
+- Personaliza los mensajes según la `edad`, `cargo` y `años de experiencia` del empleado.
 - Ayuda a fomentar el uso de EPP en empresas de suministro eléctrico.
 
 ## ¿Cómo preparar mi entorno?
