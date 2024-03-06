@@ -2,13 +2,17 @@
 
 ## Introducción
 
-Este proyecto te ayuda a enviar correos electrónicos personalizados a tus empleados para recordarles usar sus Equipos de Protección Personal (EPP). Aquí te explicamos cómo funciona y cómo usarlo.
+Este proyecto usa IA para generar correos personalizados para tus empleados y los envia con el objetivo de promover el uso de sus Equipos de Protección Personal (EPP). 
 
-## ¿Qué hace este proyecto?
+## Fundamento
+El proyecto se centra en la eficiencia y la personalización, lo que permite crear mensajes de correo electrónico que sean relevantes y útiles para cada individuo. Este enfoque se alinea con las mejores prácticas recomendadas por Thorium Labs para la implementación de campañas de correo electrónico impulsadas por IA.
 
-- Envía correos electrónicos personalizados a tus empleados.
-- Genera el cuerpo de correo usando GPT-3.5 teniendo en cuenta la `edad`, `cargo` y `años de experiencia` del empleado.
-- Ayuda a fomentar el uso de EPP en empresas de suministro eléctrico.
+## Diagrama de funcionamiento
+### Flujograma de funcionamiento
+<img src= assets/flujograma-funcionamiento.png alt= 'Carmencita Lara'>
+
+### Flujograma de metodo de generacion y envio
+<img src= assets/flujograma-correo.png alt= 'Carmencita Lara'>
 
 ## ¿Cómo preparar mi entorno?
 
@@ -20,15 +24,8 @@ API_OPEN_AI_KEY = 'API_KEY'
 EMAIL_ACCOUNT = 'CORREO_GMAIL'
 APP_PASS_GMAIL = 'CLAVE_DE_APLICACION'
 ```
-4. Ejecuta el programa con el comando: `python main.py`
-
-## ¿Cómo uso el programa?
-
-1. Carga la información de los empleados desde un archivo Excel.
-<foto excel>
-2. El programa genera correos electrónicos personalizados y los envía.
+4. Ejecuta el programa: `python main.py`
 
 
-## Fundamento
-El proyecto se centra en la eficiencia y la personalización, lo que permite crear mensajes de correo electrónico que sean relevantes y útiles para cada individuo. Este enfoque se alinea con las mejores prácticas recomendadas por Thorium Labs para la implementación de campañas de correo electrónico impulsadas por IA.
+
 

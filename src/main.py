@@ -23,7 +23,7 @@ def get_empleados_with_prompts(path):
                 row['Años de experiencia']
             )
             empleados.append(empleado)
-            # break ##############################################DEV MODE ####################################
+            # break ############################################## DEV MODE ####################################
 
         return empleados
 
