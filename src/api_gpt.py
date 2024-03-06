@@ -10,6 +10,5 @@ def get_respuesta_GPT(prompt, OPENAI_API_KEY):
   ]
 )
   respuesta = chat_completion.choices[0].message.content
-  print(chat_completion)
   costo = chat_completion.usage.total_tokens
   return respuesta, costo
