@@ -19,7 +19,7 @@ El proyecto se centra en la eficiencia y la personalización, lo que permite cre
 ## ¿Cómo preparar mi entorno?
 El proyecto usa Python 3.12
 
-1. Crea un entorno virtual `python -m env venv`
+1. Crea un entorno virtual `python -m venv env`
 1. Activa el entorno virtual `.\env\Scripts\activate` 
 1. Instala las bibliotecas usadas en el proyecto `pip install -r ".\requirements.txt"`
 1. Crea un `.env` con tus credenciales:
